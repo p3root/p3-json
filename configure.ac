@@ -7,10 +7,10 @@ AC_INIT([p3-json], [1.0], [patrik.pfaffenbauer@p3.co.at])
 AM_INIT_AUTOMAKE
 AM_MAINTAINER_MODE
 
-AC_CONFIG_SRCDIR([src/Json.cpp])
-AC_CONFIG_SRCDIR([src/Variant.cpp])
-AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_SRCDIR([src/Variant.cpp])
+AC_CONFIG_SRCDIR([src/Json.cpp])
+AC_CONFIG_MACRO_DIR([m4])
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
 # Checks for programs.
@@ -18,6 +18,7 @@ AC_PROG_CC
 AC_PROG_LIBTOOL
 AC_C_INLINE
 AM_PROG_CC_C_O
+AC_PROG_CXX
 AC_DEFINE([_GNU_SOURCE], 1, [Use GNU extensions])
 
 # Checks for libraries.
