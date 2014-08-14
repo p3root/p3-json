@@ -94,7 +94,7 @@ std::string Json::stringify(Variant &v)
 
         }
         std::string json = str.str();
-        if(json.length() > 1) {
+        if(json.length() > 1 && m.size() > 1) {
             json = json.substr(0, json.size()-1);
         }
         std::ostringstream str2;
@@ -113,7 +113,7 @@ std::string Json::stringify(Variant &v)
         }
 
         std::string json = str.str();
-        if(json.length() > 1) {
+        if(json.length() > 1 && l.size() > 1) {
             json = json.substr(0, json.size()-1);
         }
         std::ostringstream str2;
@@ -134,7 +134,7 @@ std::string Json::stringify(Variant &v)
         }
 
         std::string json = str.str();
-        if(json.length() > 1) {
+        if(json.length() > 1 && l.size() > 1) {
             json = json.substr(0, json.size()-1);
         }
         std::ostringstream str2;
