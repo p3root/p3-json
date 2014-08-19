@@ -35,6 +35,8 @@
 #include <string>
 #include <vector>
 
+#define VARIANT_PAIR(key, value) std::pair<std::string, Variant>(key, Variant::fromValue(value))
+
 class Variant
 {
 public:
